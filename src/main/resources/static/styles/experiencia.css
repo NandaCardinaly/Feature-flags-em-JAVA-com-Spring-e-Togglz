@@ -1,0 +1,114 @@
+.experiencia__container {
+    padding: 5em 0;
+}
+
+.experiencia__conteudo__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experiencia__conteudo__container .conteudo {
+    width: 60%;
+}
+
+.experiencia__titulo {
+    margin-bottom: 2em;
+    color: var(--cor-texto-primaria);
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.experiencia__lista {
+    width: 20%;
+}
+
+
+.experiencia__item {
+    line-height: 20px;
+    padding: 1em;
+    border-left: 1px solid var(--cor-texto-secundaria);
+    cursor: pointer;
+}
+
+.experiencia__item:hover {
+    background-color: var(--cor-bg-secundaria);
+}
+
+.experiencia__item-ativo {
+    color: var(--cor-texto-primaria);
+    border-left: 2px solid var(--blue);
+    background-color: var(--cor-bg-secundaria);
+}
+
+.experiencia__conteudo {
+    display: none;
+
+}
+
+.experiencia__conteudo-ativo {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experiencia__conteudo__titulo {
+    display: inline;
+    color: var(--cor-texto-primaria);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.experiencia__data {
+    color: var(--cor-texto-primaria);
+    align-self: flex-end;
+}
+
+.experiencia__conteudo__subtitulo {
+    color: var(--blue);
+    margin: 1.2em 0;
+}
+
+.experiencia__conteudo__paragrafo {
+    color: var(--cor-texto-secundaria);
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    line-height: 25px;
+
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+
+    .experiencia__container {
+        padding: 3em 0;
+    }
+
+    .experiencia__conteudo__container {
+        flex-direction: column;
+    }
+
+    .experiencia__lista {
+        width: 100%;
+    }
+
+    .experiencia__conteudo__container .conteudo {
+        width: 100%;
+        margin-top: 3em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .conteudo .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .experiencia__data {
+        margin-top: 1em;
+    }
+}

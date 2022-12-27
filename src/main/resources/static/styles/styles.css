@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    /* Cores de Gradientes Principais */
+    --blue: #00D2DF;
+    --blue-dark: #04abb4;
+    --gradiente-pink: linear-gradient(to right, #D24074, #6518B4) 1;
+    --gradient-purple: linear-gradient(to right, #9358F7, #10D7E2) 1;
+
+    /* Cores Principais */
+    
+
+    /* Tipografia Fonte  https://fonts.google.com/specimen/Inter */
+    --inter: 'Inter', sans-serif; 
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--inter);
+    background-color: var(--cor-bg-primaria);
+    color: var(--cor-texto-secundaria);
+}
+
+.container {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.btn-padrao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 50px;
+
+    color: var(--cor-texto-primaria);
+
+    text-decoration: none;
+    text-align: center;
+
+    background-color: var(--cor-bg-secundaria);
+    
+    border: 2px solid transparent;
+    
+    border-radius: 10px; /* Não funciona por causa do border-image : */
+
+    transition: transform 0.3s;
+}
+
+/* border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box; */
+
+
+.btn-padrao:hover {
+    background-color: var(--cor-bg-primaria);
+    transform: scale(1.05);
+}
+
+.btn-padrao:active {
+    transform: scale(0.9);
+}
+
+.btn-padrao i {
+    padding-right: 1.3em;
+}
+
+.btn-padrao-pink {
+    border-image: var(--gradiente-pink);
+}
+
+.btn-padrao-purple {
+    border-image: var(--gradient-purple);
+}

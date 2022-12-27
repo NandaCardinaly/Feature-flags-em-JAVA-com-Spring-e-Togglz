@@ -1,0 +1,13 @@
+
+togglz:
+  feature-enums: com.example.demo.model.Features
+
+  # features:
+  #   NEW_USUARIO_SERVICE_LISTAR:
+  #     enabled: true
+
+  console:
+    enabled: true
+    secured: false
+    path: /togglz
+    use-management-port: false

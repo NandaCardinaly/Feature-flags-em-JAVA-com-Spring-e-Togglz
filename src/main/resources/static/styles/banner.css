@@ -1,0 +1,83 @@
+.banner {
+    height: calc(100vh - 150px);
+    background: url("../img/Looper BG.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.banner__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.banner__titulo {
+    color: var(--cor-texto-primaria);
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.banner__titulo em {
+    color: var(--blue);
+    font-size: 2em;
+    margin: .5em 0;
+    display: inline-block;
+}
+
+.banner__buttons {
+    margin-top: 3em;
+    display: flex;
+}
+
+.banner__buttons .btn-padrao:nth-child(2) {
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 900px) {
+   .banner {
+       position: relative;
+    }
+
+    .banner::before {
+        content: "";
+        background-color: var(--cor-bg-primaria-transparente);
+        width: 100vw;
+        height: calc(100vh - 150px);
+        position: absolute;
+        
+    }
+
+    .banner__container {
+        z-index: 1;
+    }
+
+    .banner__titulo {
+        font-size: 1.4em;
+        z-index: 1;
+    }
+
+    .banner__titulo em {
+        font-size: 1.8em;   
+    }
+    
+    .banner__buttons {
+        
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .banner__titulo {
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .banner__titulo {
+        font-size: 1em;
+        line-height: 22px;
+    }
+}

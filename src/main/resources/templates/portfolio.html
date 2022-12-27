@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mussum Ipsum</title>
+    <link rel="stylesheet" th:href="@{styles/reset.css}">
+    <link rel="stylesheet" th:href="@{styles/styles.css}">
+    <link rel="stylesheet" th:href="@{styles/header.css}">
+    <link rel="stylesheet" th:href="@{styles/banner.css}">
+    <link rel="stylesheet" th:href="@{styles/sobre.css}">
+    <link rel="stylesheet" th:href="@{styles/experiencia.css}">
+    <link rel="stylesheet" th:href="@{styles/projetos.css}">
+    <link rel="stylesheet" th:href="@{styles/footer.css}">
+    <link rel="stylesheet" th:href="@{styles/tema-light.css}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="#" class="header__logo">Mussum Ipsum</a>
+            <nav class="header__navegacao">
+                <ul class="header__menu">
+                    <li class="header__item"><a href="#">Home</a></li>
+                    <li class="header__item"><a href="#sobre">Sobre mim</a></li>
+                    <li class="header__item"><a href="#experiencia">Experiência</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner__container container">
+                <h1 class="banner__titulo">Olá, eu sou <br><em>Mussum Ipsum</em><br> Dev na GFT.</h1>
+                <div class="banner__buttons">
+                    <a href="#" target="_blank" title="Ver perfil no LinkedIn"
+                        class="btn-padrao btn-padrao-purple" alt="Ver perfil no LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+                    <a href="#" target="_blank" class="btn-padrao btn-padrao-pink"
+                        title="Ver perfil no GitHub" alt="Ver perfil no GitHub"><i
+                            class="fa-brands fa-github"></i>GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="sobre__container container">
+
+                <img class="sobre__imagem" th:src="@{/img/mussum.jpeg}"
+                    title="Foto do Mussum"
+                    alt="Imagem do autor do portifólio">
+                <div class="sobre__conteudo">
+                    <h2 class="sobre__titulo">Sobre Mim</h2>
+                    <h3 class="sobre__subtitulo">Cidade Nenhuma - SS, Brasil</h3>
+                    <p class="sobre__paragrafo">Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl.Manduma pindureta quium dia nois paga.Atirei o pau no gatis, per gatis num morreus.Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    <ul class="sobre__links">
+                        <a href="#" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="#" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </ul>
+                    <div class="sobre__btn">
+                        <a class="btn-padrao btn-padrao-pink" href="#"
+                            download=""><i class="fa-solid fa-cloud-arrow-down"></i> Curriculo</a>
+                        <a class="btn-padrao btn-padrao-purple" href="#"><i
+                                class="fa-solid fa-envelope"></i> E-mail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="experiencia">
+            <div class="experiencia__container container">
+                <h2 class="experiencia__titulo">Experiência</h2>
+                <div class="experiencia__conteudo__container">
+                    <ul class="experiencia__lista">
+                        <li class="experiencia__item experiencia__item-ativo">Primeira Experiência</li>
+                        <li class="experiencia__item">Segunda Experiência</li>
+                        <li class="experiencia__item">Terceira Experiência</li>
+                    </ul>
+                    <div class="conteudo">
+                        <article class="experiencia__conteudo experiencia__conteudo-ativo">
+                            <div class="d-flex">
+                                <h3 class="experiencia__conteudo__titulo">Primeira Experiência</h3>
+                                <span class="experiencia__data">Jan. 2019 a Dez. 2021</span>
+                            </div>
+                            <h4 class="experiencia__conteudo__subtitulo">Mussum Ipsum</h4>
+                            <p class="experiencia__conteudo__paragrafo">Suco de cevadiss deixa as pessoas mais interessantis.A ordem dos tratores não altera o pão duris.Tá deprimidis. Eu conheço uma cachacis que pode alegrar sua vidis</p>
+                        </article>
+                        <article class="experiencia__conteudo">
+                            <div class="d-flex">
+                                <h3 class="experiencia__conteudo__titulo">Segunda Experiência</h3>
+                                <span class="experiencia__data">Jan. 2019 a Dez. 2021</span>
+                            </div>
+                            <h4 class="experiencia__conteudo__subtitulo">Mussum Ipsum</h4>
+                            <p class="experiencia__conteudo__paragrafo">A ordem dos tratores não altera o pão duris.Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Quem num gosta di mim que vai caçá sua turmis!.</p>
+                        </article>
+                        <article class="experiencia__conteudo">
+                            <div class="d-flex">
+                                <h3 class="experiencia__conteudo__titulo">Terceira Experiência</h3>
+                                <span class="experiencia__data">Jan. 2019 a Dez. 2021</span>
+                            </div>
+                            <h4 class="experiencia__conteudo__subtitulo">Mussum Ipsum</h4>
+                            <p class="experiencia__conteudo__paragrafo">Manduma pindureta quium dia nois paga.Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Praesent vel viverra nisi.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <span>@ 2022 - Mussum Ipsum</span>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/e9f8d84179.js" crossorigin="anonymous"></script>
+    <script th:src="@{/js/index.js}"></script>
+    <script th:src="@{/js/renderizarProjetos.js}"></script>
+</body>
+
+</html>
